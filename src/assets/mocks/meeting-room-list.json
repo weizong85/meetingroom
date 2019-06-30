@@ -1,0 +1,35 @@
+{
+	"status": {
+		"code": 200,
+		"description": null,
+		"error_code": null
+	},
+	"response": {
+		"meeting_room_list": [
+			{
+				"room_id": "1",
+				"room_name": "Room 1",
+				"room_size": "32",
+				"level": "1",
+				"unit": "01-21",
+				"description": "This is room 1"
+			},
+			{
+				"room_id": "2",
+				"room_name": "Room 2",
+				"room_size": "32",
+				"level": "1",
+				"unit": "01-22",
+				"description": "This is room 2"
+			},
+			{
+				"room_id": "3",
+				"room_name": "Room 3",
+				"room_size": "32",
+				"level": "1",
+				"unit": "01-23",
+				"description": "This is room 3"
+			}
+		]
+	}
+}

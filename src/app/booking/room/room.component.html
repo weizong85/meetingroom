@@ -1,0 +1,19 @@
+<h3>{{selectedRoom.room_name}}</h3>
+<p>{{selectedRoom.description}}</p>
+
+<div><label>Level-Unit: </label>{{selectedRoom.unit}}</div>
+<div><label>Pax Size: </label>{{selectedRoom.room_size}}</div>
+<mat-form-field>
+  <input matInput [matDatepicker]="myDatepicker">
+  <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+  <mat-datepicker #myDatepicker></mat-datepicker>
+</mat-form-field>
+
+<table style="width:100%">
+  <tr>
+    <th *ngFor="let hour of hours">{{ getHour(hour) }}</th>
+  </tr>
+  <tr>
+    <td *ngFor="let hour of hours">avaliable</td>
+  </tr>
+</table>
