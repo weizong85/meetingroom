@@ -8,19 +8,24 @@ import { BookingService } from './booking.service';
 })
 export class BookingComponent implements OnInit {
 
+	startHour = null;
+	endHour = null;
+	selectedRoom = null;
+	meetingRoom = [];
+
 	constructor(private _bookingService: BookingService) {
 	}
-	selectedRoom = null;
-	MeetingRoom = [];
 	ngOnInit() {
 		this._bookingService.getBookingRoomList().then((data:any) => {
-			this.MeetingRoom = data.response.meeting_room_list;
-			this.selectedRoom = this.MeetingRoom[0];
+			this.startHour = data.response.first_booking;
+			this.endHour = data.response.last_booking;
+			this.meetingRoom = data.response.meeting_room_list;
+			this.selectedRoom = this.meetingRoom[0];
 		})
 	}
 
 	onSelectRoom(room) {
-		const result = this.MeetingRoom.filter(rm => rm.room_name === room);
+		const result = this.meetingRoom.filter(rm => rm.room_name === room);
 		this.selectedRoom = result[0];
 	}
 }

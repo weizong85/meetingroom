@@ -10,4 +10,22 @@ export class BookingWebServices {
 	getMeetingRoomList() {
 		return this._httpServices.fetch('meeting-room-list');
 	}
+
+	getBookingSchedule(from, to, roomId) {
+		let req = {
+			from: from, 
+			to: to, 
+			roomId: roomId
+		};
+		return this._httpServices.fetch('booking-schedule', req);
+	}
+
+	setBooking(from, to, roomId) {
+		let req = {
+			from: from, 
+			to: to, 
+			roomId: roomId
+		};
+		return this._httpServices.fetch('book-schedule', req);
+	}
 }

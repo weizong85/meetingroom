@@ -9,11 +9,12 @@ export class BookingService {
 		return this._bookingWebService.getMeetingRoomList();
 	}
 
-	getBookingSchedule() {
-		// to pass in date, room id
+	getBookingSchedule(from, to, roomId) {
+		return this._bookingWebService.getBookingSchedule(from, to, roomId);// to pass in date, room id
 	}
 
-	setBooking() {
+	setBooking(from, to, roomId) {
+		return this._bookingWebService.setBooking(from, to, roomId);// to pass in date, room id
 		// to pass in date, time, duration, room id
 	}
 }

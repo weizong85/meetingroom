@@ -6,6 +6,8 @@ export const environment = {
   production: false,
   services: {
   	'meeting-room-list': 'assets/mocks/meeting-room-list.json',
+  	'booking-schedule': 'assets/mocks/booking-schedule.json',
+  	'book-schedule': 'assets/mocks/booking-schedule.json',
   	'path': {
 
   	}

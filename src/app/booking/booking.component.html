@@ -2,7 +2,7 @@
 
 <label>Room Selection: </label> 
 <select (change)="onSelectRoom($event.target.value)">
-  <option *ngFor="let Room of MeetingRoom" value="{{Room.room_name}}">{{Room.room_name}}</option>
+  <option *ngFor="let Room of meetingRoom" value="{{Room.room_name}}">{{Room.room_name}}</option>
 </select>
 
-<room *ngIf='selectedRoom' [selectedRoom]='selectedRoom'></room>
+<room *ngIf='selectedRoom' [startHour]='startHour' [endHour]='endHour' [selectedRoom]='selectedRoom'></room>

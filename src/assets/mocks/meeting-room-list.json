@@ -5,6 +5,8 @@
 		"error_code": null
 	},
 	"response": {
+		"first_booking" :  "0800",
+		"last_booking" :  "1800",
 		"meeting_room_list": [
 			{
 				"room_id": "1",

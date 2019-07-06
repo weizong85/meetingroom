@@ -5,7 +5,10 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { ConfigurationManager } from './configuration-manager';
 import { environment } from './../environments/environment';
 
-
+/*
+	HTTPClient to manage all API calls.
+	HTTP Authorization request header can be added for user management
+*/
 @Injectable()
 export class HttpServices {
 	successCode: Array<any> = [200];

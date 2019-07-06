@@ -18,12 +18,12 @@ import { RoomComponent } from './room/room.component';
   imports: [
     CommonModule,
     BookingRouting,
-    MatNativeDateModule, 
-  MatDatepickerModule,
-  MatButtonModule,
-  MatFormFieldModule,
-  MatInputModule,
-  MatRippleModule
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule
   ],
   exports: [
     MatNativeDateModule, 
