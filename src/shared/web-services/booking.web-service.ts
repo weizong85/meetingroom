@@ -17,7 +17,7 @@ export class BookingWebServices {
 			to: to, 
 			roomId: roomId
 		};
-		return this._httpServices.fetch('booking-schedule', req);
+		return this._httpServices.fetch('booking-schedule', req, 'POST');
 	}
 
 	setBooking(from, to, roomId) {
@@ -26,6 +26,6 @@ export class BookingWebServices {
 			to: to, 
 			roomId: roomId
 		};
-		return this._httpServices.fetch('book-schedule', req);
+		return this._httpServices.fetch('book-schedule', req, 'POST');
 	}
 }

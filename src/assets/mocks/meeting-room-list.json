@@ -5,8 +5,6 @@
 		"error_code": null
 	},
 	"response": {
-		"first_booking" :  "0800",
-		"last_booking" :  "1800",
 		"meeting_room_list": [
 			{
 				"room_id": "1",
@@ -14,7 +12,9 @@
 				"room_size": "32",
 				"level": "1",
 				"unit": "01-21",
-				"description": "This is room 1"
+				"description": "This is room 1",
+				"first_booking" :  "0800",
+				"last_booking" :  "1800"
 			},
 			{
 				"room_id": "2",
@@ -22,7 +22,9 @@
 				"room_size": "32",
 				"level": "1",
 				"unit": "01-22",
-				"description": "This is room 2"
+				"description": "This is room 2",
+				"first_booking" :  "0800",
+				"last_booking" :  "1800"
 			},
 			{
 				"room_id": "3",
@@ -30,7 +32,9 @@
 				"room_size": "32",
 				"level": "1",
 				"unit": "01-23",
-				"description": "This is room 3"
+				"description": "This is room 3",
+				"first_booking" :  "0800",
+				"last_booking" :  "1800"
 			}
 		]
 	}

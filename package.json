@@ -1,9 +1,10 @@
 {
   "name": "Meeting-Room-App",
   "version": "0.0.0",
+  "main": "server.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve | node server/server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
