@@ -52,6 +52,7 @@ export class RoomComponent implements OnInit {
 		Using timestamp to get schedule.
 			- Date and time will be handled
 			- Easy enhancement to retrieve weekly & monthly schedule
+			- Future ebhancement can include 15mins or 30mins booking
 	*/
 	getBookingSchedule() {
 		let _startTime = moment(this.date.value).startOf("day").unix();

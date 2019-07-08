@@ -1,7 +1,6 @@
 const Schedule = require('../models/schedule.model.js');
 
 exports.create = (req, res) => {
-    console.log('req.body:', req.body);
     // Request validation
     if(!req.body) {
         return res.status(400).send({
@@ -19,7 +18,6 @@ exports.create = (req, res) => {
     // Save Schedule in the database
     schedule.save()
     .then(data => {
-        console.log(data);
         var result = {
             'status': {
                 'code': 200,
@@ -37,8 +35,6 @@ exports.create = (req, res) => {
 };
 
 exports.findById = (req, res) => {
-    console.log('from:', req.body.from);
-    console.log('to:', req.body.to);
     Schedule.find({ 
         room_id: { $eq: req.body.roomId },
         $and: [ 
@@ -47,8 +43,6 @@ exports.findById = (req, res) => {
               ] 
     })
     .then(schedule => {
-        console.log('roomId:',  req.body.roomId);
-        console.log('schedule:', schedule);
         if(!schedule) {
             schedule = [];         
         }
