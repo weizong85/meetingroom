@@ -45,6 +45,8 @@ export class RoomComponent implements OnInit {
 	onSelectRoom(room) {
 		const result = this.meetingRoom.filter(rm => rm.room_name === room);
 		this.selectedRoom = result[0];
+ 		this.startHour = this.selectedRoom.first_booking;
+ 		this.endHour = this.selectedRoom.last_booking;
 		this.getBookingSchedule();
 	}
 
